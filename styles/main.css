@@ -69,6 +69,8 @@ figure {
   margin: 1em 40px; }
 
 hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -105,6 +107,8 @@ input {
   line-height: normal; }
 
 input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -113,6 +117,8 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 input[type="search"] {
   -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
@@ -145,6 +151,7 @@ td, th {
     text-shadow: none !important;
     color: #000 !important;
     background: transparent !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   a, a:visited {
     text-decoration: underline; }
@@ -800,9 +807,13 @@ td, th {
   content: "\e200"; }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -852,6 +863,7 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -1134,6 +1146,7 @@ kbd {
   color: #fff;
   background-color: #333;
   border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
 pre {
@@ -1807,6 +1820,8 @@ label {
   font-weight: bold; }
 
 input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 input[type="radio"], input[type="checkbox"] {
@@ -1848,11 +1863,14 @@ output {
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   .form-control:focus {
     border-color: #66afe9;
     outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
   .form-control::-moz-placeholder {
     color: #999999;
@@ -1974,9 +1992,11 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   color: #3c763d; }
 .has-success .form-control {
   border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   .has-success .form-control:focus {
     border-color: #2b542b;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
 .has-success .input-group-addon {
   color: #3c763d;
@@ -1989,9 +2009,11 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   color: #8a6d3b; }
 .has-warning .form-control {
   border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   .has-warning .form-control:focus {
     border-color: #66502c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c09f6b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c09f6b; }
 .has-warning .input-group-addon {
   color: #8a6d3b;
@@ -2004,9 +2026,11 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   color: #a94442; }
 .has-error .form-control {
   border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   .has-error .form-control:focus {
     border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
 .has-error .input-group-addon {
   color: #a94442;
@@ -2109,12 +2133,14 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   .btn:active, .btn.active {
     outline: 0;
     background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
   .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.65;
     filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
     box-shadow: none; }
 
 .btn-default {
@@ -2226,6 +2252,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
     background-color: transparent;
+    -webkit-box-shadow: none;
     box-shadow: none; }
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
@@ -2269,6 +2296,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .fade {
   opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear; }
   .fade.in {
     opacity: 1; }
@@ -2288,6 +2316,7 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
+  -webkit-transition: height 0.35s ease;
   transition: height 0.35s ease; }
 
 .caret {
@@ -2323,7 +2352,9 @@ tbody.collapse.in {
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-background-clip: padding-box;
   background-clip: padding-box; }
   .dropdown-menu.pull-right {
     right: 0;
@@ -2478,8 +2509,10 @@ tbody.collapse.in {
   padding-right: 12px; }
 
 .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
   .btn-group.open .dropdown-toggle.btn-link {
+    -webkit-box-shadow: none;
     box-shadow: none; }
 
 .btn .caret {
@@ -2763,6 +2796,7 @@ tbody.collapse.in {
   padding-right: 15px;
   padding-left: 15px;
   border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch; }
   .navbar-collapse:before, .navbar-collapse:after {
@@ -2776,6 +2810,7 @@ tbody.collapse.in {
     .navbar-collapse {
       width: auto;
       border-top: 0;
+      -webkit-box-shadow: none;
       box-shadow: none; }
       .navbar-collapse.collapse {
         display: block !important;
@@ -2877,6 +2912,7 @@ tbody.collapse.in {
       margin-top: 0;
       background-color: transparent;
       border: 0;
+      -webkit-box-shadow: none;
       box-shadow: none; }
       .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
         padding: 5px 15px 5px 25px; }
@@ -2908,6 +2944,7 @@ tbody.collapse.in {
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-top: 8px;
   margin-bottom: 8px; }
@@ -2922,6 +2959,7 @@ tbody.collapse.in {
       margin-right: 0;
       padding-top: 0;
       padding-bottom: 0;
+      -webkit-box-shadow: none;
       box-shadow: none; }
       .navbar-form.navbar-right:last-child {
         margin-right: -15px; } }
@@ -3294,6 +3332,7 @@ a.badge:hover, a.badge:focus {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   .thumbnail > img, .thumbnail a > img {
     display: block;
@@ -3387,6 +3426,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .progress-bar {
@@ -3398,11 +3438,15 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   color: #fff;
   text-align: center;
   background-color: #428bca;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease; }
 
 .progress-striped .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 40px 40px;
   background-size: 40px 40px; }
 
 .progress.active .progress-bar {
@@ -3416,26 +3460,31 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   min-width: 30px;
   background-color: transparent;
   background-image: none;
+  -webkit-box-shadow: none;
   box-shadow: none; }
 
 .progress-bar-success {
   background-color: #5cb85c; }
   .progress-striped .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-info {
   background-color: #5bc0de; }
   .progress-striped .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-warning {
   background-color: #f0ad4e; }
   .progress-striped .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-danger {
   background-color: #d9534f; }
   .progress-striped .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .media, .media-body {
@@ -3589,6 +3638,7 @@ a.list-group-item-danger {
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
 .panel-body {
@@ -3781,6 +3831,7 @@ a.list-group-item-danger {
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
   .well blockquote {
     border-color: #ddd;
@@ -3834,11 +3885,13 @@ button.close {
   outline: 0; }
   .modal.fade .modal-dialog {
     -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
     transform: translate(0, -25%);
-    transition: -webkit-transform 0.3s ease-out;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: transform 0.3s ease-out; }
   .modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
     transform: translate(0, 0); }
 
 .modal-dialog {
@@ -3852,7 +3905,9 @@ button.close {
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   outline: 0; }
 
@@ -3916,6 +3971,7 @@ button.close {
     width: 600px;
     margin: 30px auto; }
   .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
   .modal-sm {
     width: 300px; } }
@@ -4020,10 +4076,12 @@ button.close {
   padding: 1px;
   text-align: left;
   background-color: #fff;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   white-space: normal; }
   .popover.top {
@@ -4126,6 +4184,7 @@ button.close {
   .carousel-inner > .item {
     display: none;
     position: relative;
+    -webkit-transition: 0.6s ease-in-out left;
     transition: 0.6s ease-in-out left; }
     .carousel-inner > .item > img, .carousel-inner > .item > a > img {
       display: block;
@@ -4164,12 +4223,18 @@ button.close {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
   .carousel-control.left {
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
   .carousel-control.right {
     left: auto;
     right: 0;
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
@@ -4467,9 +4532,1016 @@ button.close {
       float: left; }
       #let-me-take-a-selfie ul li.pop {
         -webkit-transform: scale(1);
+        -ms-transform: scale(1);
         transform: scale(1);
-        -webkit-animation: scaleUp 0.3s linear 0.1s;
-        animation: scaleUp 0.3s linear 0.1s; }
+        -webkit-animation: scaleUp 0.3s linear;
+        animation: scaleUp 0.3s linear;
+        position: relative; }
+        #let-me-take-a-selfie ul li.pop:nth-child(1) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 1/1.2ms;
+          animation: scaleUp 0.3s linear 1/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(2) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 2/1.2ms;
+          animation: scaleUp 0.3s linear 2/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(3) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 3/1.2ms;
+          animation: scaleUp 0.3s linear 3/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(4) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 4/1.2ms;
+          animation: scaleUp 0.3s linear 4/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(5) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 5/1.2ms;
+          animation: scaleUp 0.3s linear 5/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(6) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 6/1.2ms;
+          animation: scaleUp 0.3s linear 6/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(7) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 7/1.2ms;
+          animation: scaleUp 0.3s linear 7/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(8) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 8/1.2ms;
+          animation: scaleUp 0.3s linear 8/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(9) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 9/1.2ms;
+          animation: scaleUp 0.3s linear 9/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(10) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 10/1.2ms;
+          animation: scaleUp 0.3s linear 10/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(11) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 11/1.2ms;
+          animation: scaleUp 0.3s linear 11/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(12) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 12/1.2ms;
+          animation: scaleUp 0.3s linear 12/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(13) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 13/1.2ms;
+          animation: scaleUp 0.3s linear 13/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(14) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 14/1.2ms;
+          animation: scaleUp 0.3s linear 14/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(15) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 15/1.2ms;
+          animation: scaleUp 0.3s linear 15/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(16) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 16/1.2ms;
+          animation: scaleUp 0.3s linear 16/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(17) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 17/1.2ms;
+          animation: scaleUp 0.3s linear 17/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(18) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 18/1.2ms;
+          animation: scaleUp 0.3s linear 18/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(19) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 19/1.2ms;
+          animation: scaleUp 0.3s linear 19/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(20) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 20/1.2ms;
+          animation: scaleUp 0.3s linear 20/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(21) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 21/1.2ms;
+          animation: scaleUp 0.3s linear 21/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(22) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 22/1.2ms;
+          animation: scaleUp 0.3s linear 22/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(23) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 23/1.2ms;
+          animation: scaleUp 0.3s linear 23/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(24) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 24/1.2ms;
+          animation: scaleUp 0.3s linear 24/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(25) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 25/1.2ms;
+          animation: scaleUp 0.3s linear 25/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(26) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 26/1.2ms;
+          animation: scaleUp 0.3s linear 26/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(27) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 27/1.2ms;
+          animation: scaleUp 0.3s linear 27/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(28) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 28/1.2ms;
+          animation: scaleUp 0.3s linear 28/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(29) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 29/1.2ms;
+          animation: scaleUp 0.3s linear 29/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(30) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 30/1.2ms;
+          animation: scaleUp 0.3s linear 30/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(31) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 31/1.2ms;
+          animation: scaleUp 0.3s linear 31/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(32) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 32/1.2ms;
+          animation: scaleUp 0.3s linear 32/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(33) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 33/1.2ms;
+          animation: scaleUp 0.3s linear 33/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(34) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 34/1.2ms;
+          animation: scaleUp 0.3s linear 34/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(35) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 35/1.2ms;
+          animation: scaleUp 0.3s linear 35/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(36) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 36/1.2ms;
+          animation: scaleUp 0.3s linear 36/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(37) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 37/1.2ms;
+          animation: scaleUp 0.3s linear 37/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(38) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 38/1.2ms;
+          animation: scaleUp 0.3s linear 38/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(39) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 39/1.2ms;
+          animation: scaleUp 0.3s linear 39/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(40) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 40/1.2ms;
+          animation: scaleUp 0.3s linear 40/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(41) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 41/1.2ms;
+          animation: scaleUp 0.3s linear 41/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(42) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 42/1.2ms;
+          animation: scaleUp 0.3s linear 42/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(43) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 43/1.2ms;
+          animation: scaleUp 0.3s linear 43/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(44) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 44/1.2ms;
+          animation: scaleUp 0.3s linear 44/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(45) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 45/1.2ms;
+          animation: scaleUp 0.3s linear 45/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(46) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 46/1.2ms;
+          animation: scaleUp 0.3s linear 46/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(47) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 47/1.2ms;
+          animation: scaleUp 0.3s linear 47/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(48) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 48/1.2ms;
+          animation: scaleUp 0.3s linear 48/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(49) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 49/1.2ms;
+          animation: scaleUp 0.3s linear 49/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(50) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 50/1.2ms;
+          animation: scaleUp 0.3s linear 50/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(51) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 51/1.2ms;
+          animation: scaleUp 0.3s linear 51/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(52) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 52/1.2ms;
+          animation: scaleUp 0.3s linear 52/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(53) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 53/1.2ms;
+          animation: scaleUp 0.3s linear 53/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(54) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 54/1.2ms;
+          animation: scaleUp 0.3s linear 54/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(55) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 55/1.2ms;
+          animation: scaleUp 0.3s linear 55/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(56) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 56/1.2ms;
+          animation: scaleUp 0.3s linear 56/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(57) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 57/1.2ms;
+          animation: scaleUp 0.3s linear 57/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(58) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 58/1.2ms;
+          animation: scaleUp 0.3s linear 58/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(59) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 59/1.2ms;
+          animation: scaleUp 0.3s linear 59/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(60) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 60/1.2ms;
+          animation: scaleUp 0.3s linear 60/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(61) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 61/1.2ms;
+          animation: scaleUp 0.3s linear 61/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(62) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 62/1.2ms;
+          animation: scaleUp 0.3s linear 62/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(63) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 63/1.2ms;
+          animation: scaleUp 0.3s linear 63/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(64) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 64/1.2ms;
+          animation: scaleUp 0.3s linear 64/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(65) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 65/1.2ms;
+          animation: scaleUp 0.3s linear 65/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(66) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 66/1.2ms;
+          animation: scaleUp 0.3s linear 66/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(67) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 67/1.2ms;
+          animation: scaleUp 0.3s linear 67/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(68) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 68/1.2ms;
+          animation: scaleUp 0.3s linear 68/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(69) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 69/1.2ms;
+          animation: scaleUp 0.3s linear 69/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(70) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 70/1.2ms;
+          animation: scaleUp 0.3s linear 70/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(71) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 71/1.2ms;
+          animation: scaleUp 0.3s linear 71/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(72) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 72/1.2ms;
+          animation: scaleUp 0.3s linear 72/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(73) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 73/1.2ms;
+          animation: scaleUp 0.3s linear 73/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(74) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 74/1.2ms;
+          animation: scaleUp 0.3s linear 74/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(75) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 75/1.2ms;
+          animation: scaleUp 0.3s linear 75/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(76) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 76/1.2ms;
+          animation: scaleUp 0.3s linear 76/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(77) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 77/1.2ms;
+          animation: scaleUp 0.3s linear 77/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(78) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 78/1.2ms;
+          animation: scaleUp 0.3s linear 78/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(79) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 79/1.2ms;
+          animation: scaleUp 0.3s linear 79/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(80) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 80/1.2ms;
+          animation: scaleUp 0.3s linear 80/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(81) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 81/1.2ms;
+          animation: scaleUp 0.3s linear 81/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(82) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 82/1.2ms;
+          animation: scaleUp 0.3s linear 82/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(83) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 83/1.2ms;
+          animation: scaleUp 0.3s linear 83/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(84) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 84/1.2ms;
+          animation: scaleUp 0.3s linear 84/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(85) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 85/1.2ms;
+          animation: scaleUp 0.3s linear 85/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(86) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 86/1.2ms;
+          animation: scaleUp 0.3s linear 86/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(87) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 87/1.2ms;
+          animation: scaleUp 0.3s linear 87/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(88) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 88/1.2ms;
+          animation: scaleUp 0.3s linear 88/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(89) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 89/1.2ms;
+          animation: scaleUp 0.3s linear 89/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(90) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 90/1.2ms;
+          animation: scaleUp 0.3s linear 90/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(91) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 91/1.2ms;
+          animation: scaleUp 0.3s linear 91/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(92) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 92/1.2ms;
+          animation: scaleUp 0.3s linear 92/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(93) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 93/1.2ms;
+          animation: scaleUp 0.3s linear 93/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(94) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 94/1.2ms;
+          animation: scaleUp 0.3s linear 94/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(95) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 95/1.2ms;
+          animation: scaleUp 0.3s linear 95/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(96) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 96/1.2ms;
+          animation: scaleUp 0.3s linear 96/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(97) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 97/1.2ms;
+          animation: scaleUp 0.3s linear 97/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(98) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 98/1.2ms;
+          animation: scaleUp 0.3s linear 98/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(99) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 99/1.2ms;
+          animation: scaleUp 0.3s linear 99/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(100) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 100/1.2ms;
+          animation: scaleUp 0.3s linear 100/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(101) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 101/1.2ms;
+          animation: scaleUp 0.3s linear 101/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(102) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 102/1.2ms;
+          animation: scaleUp 0.3s linear 102/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(103) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 103/1.2ms;
+          animation: scaleUp 0.3s linear 103/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(104) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 104/1.2ms;
+          animation: scaleUp 0.3s linear 104/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(105) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 105/1.2ms;
+          animation: scaleUp 0.3s linear 105/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(106) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 106/1.2ms;
+          animation: scaleUp 0.3s linear 106/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(107) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 107/1.2ms;
+          animation: scaleUp 0.3s linear 107/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(108) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 108/1.2ms;
+          animation: scaleUp 0.3s linear 108/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(109) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 109/1.2ms;
+          animation: scaleUp 0.3s linear 109/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(110) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 110/1.2ms;
+          animation: scaleUp 0.3s linear 110/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(111) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 111/1.2ms;
+          animation: scaleUp 0.3s linear 111/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(112) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 112/1.2ms;
+          animation: scaleUp 0.3s linear 112/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(113) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 113/1.2ms;
+          animation: scaleUp 0.3s linear 113/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(114) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 114/1.2ms;
+          animation: scaleUp 0.3s linear 114/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(115) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 115/1.2ms;
+          animation: scaleUp 0.3s linear 115/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(116) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 116/1.2ms;
+          animation: scaleUp 0.3s linear 116/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(117) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 117/1.2ms;
+          animation: scaleUp 0.3s linear 117/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(118) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 118/1.2ms;
+          animation: scaleUp 0.3s linear 118/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(119) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 119/1.2ms;
+          animation: scaleUp 0.3s linear 119/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(120) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 120/1.2ms;
+          animation: scaleUp 0.3s linear 120/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(121) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 121/1.2ms;
+          animation: scaleUp 0.3s linear 121/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(122) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 122/1.2ms;
+          animation: scaleUp 0.3s linear 122/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(123) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 123/1.2ms;
+          animation: scaleUp 0.3s linear 123/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(124) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 124/1.2ms;
+          animation: scaleUp 0.3s linear 124/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(125) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 125/1.2ms;
+          animation: scaleUp 0.3s linear 125/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(126) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 126/1.2ms;
+          animation: scaleUp 0.3s linear 126/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(127) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 127/1.2ms;
+          animation: scaleUp 0.3s linear 127/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(128) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 128/1.2ms;
+          animation: scaleUp 0.3s linear 128/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(129) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 129/1.2ms;
+          animation: scaleUp 0.3s linear 129/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(130) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 130/1.2ms;
+          animation: scaleUp 0.3s linear 130/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(131) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 131/1.2ms;
+          animation: scaleUp 0.3s linear 131/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(132) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 132/1.2ms;
+          animation: scaleUp 0.3s linear 132/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(133) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 133/1.2ms;
+          animation: scaleUp 0.3s linear 133/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(134) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 134/1.2ms;
+          animation: scaleUp 0.3s linear 134/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(135) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 135/1.2ms;
+          animation: scaleUp 0.3s linear 135/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(136) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 136/1.2ms;
+          animation: scaleUp 0.3s linear 136/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(137) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 137/1.2ms;
+          animation: scaleUp 0.3s linear 137/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(138) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 138/1.2ms;
+          animation: scaleUp 0.3s linear 138/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(139) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 139/1.2ms;
+          animation: scaleUp 0.3s linear 139/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(140) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 140/1.2ms;
+          animation: scaleUp 0.3s linear 140/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(141) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 141/1.2ms;
+          animation: scaleUp 0.3s linear 141/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(142) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 142/1.2ms;
+          animation: scaleUp 0.3s linear 142/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(143) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 143/1.2ms;
+          animation: scaleUp 0.3s linear 143/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(144) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 144/1.2ms;
+          animation: scaleUp 0.3s linear 144/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(145) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 145/1.2ms;
+          animation: scaleUp 0.3s linear 145/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(146) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 146/1.2ms;
+          animation: scaleUp 0.3s linear 146/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(147) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 147/1.2ms;
+          animation: scaleUp 0.3s linear 147/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(148) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 148/1.2ms;
+          animation: scaleUp 0.3s linear 148/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(149) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 149/1.2ms;
+          animation: scaleUp 0.3s linear 149/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(150) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 150/1.2ms;
+          animation: scaleUp 0.3s linear 150/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(151) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 151/1.2ms;
+          animation: scaleUp 0.3s linear 151/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(152) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 152/1.2ms;
+          animation: scaleUp 0.3s linear 152/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(153) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 153/1.2ms;
+          animation: scaleUp 0.3s linear 153/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(154) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 154/1.2ms;
+          animation: scaleUp 0.3s linear 154/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(155) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 155/1.2ms;
+          animation: scaleUp 0.3s linear 155/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(156) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 156/1.2ms;
+          animation: scaleUp 0.3s linear 156/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(157) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 157/1.2ms;
+          animation: scaleUp 0.3s linear 157/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(158) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 158/1.2ms;
+          animation: scaleUp 0.3s linear 158/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(159) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 159/1.2ms;
+          animation: scaleUp 0.3s linear 159/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(160) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 160/1.2ms;
+          animation: scaleUp 0.3s linear 160/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(161) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 161/1.2ms;
+          animation: scaleUp 0.3s linear 161/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(162) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 162/1.2ms;
+          animation: scaleUp 0.3s linear 162/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(163) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 163/1.2ms;
+          animation: scaleUp 0.3s linear 163/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(164) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 164/1.2ms;
+          animation: scaleUp 0.3s linear 164/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(165) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 165/1.2ms;
+          animation: scaleUp 0.3s linear 165/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(166) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 166/1.2ms;
+          animation: scaleUp 0.3s linear 166/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(167) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 167/1.2ms;
+          animation: scaleUp 0.3s linear 167/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(168) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 168/1.2ms;
+          animation: scaleUp 0.3s linear 168/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(169) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 169/1.2ms;
+          animation: scaleUp 0.3s linear 169/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(170) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 170/1.2ms;
+          animation: scaleUp 0.3s linear 170/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(171) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 171/1.2ms;
+          animation: scaleUp 0.3s linear 171/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(172) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 172/1.2ms;
+          animation: scaleUp 0.3s linear 172/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(173) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 173/1.2ms;
+          animation: scaleUp 0.3s linear 173/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(174) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 174/1.2ms;
+          animation: scaleUp 0.3s linear 174/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(175) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 175/1.2ms;
+          animation: scaleUp 0.3s linear 175/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(176) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 176/1.2ms;
+          animation: scaleUp 0.3s linear 176/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(177) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 177/1.2ms;
+          animation: scaleUp 0.3s linear 177/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(178) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 178/1.2ms;
+          animation: scaleUp 0.3s linear 178/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(179) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 179/1.2ms;
+          animation: scaleUp 0.3s linear 179/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(180) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 180/1.2ms;
+          animation: scaleUp 0.3s linear 180/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(181) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 181/1.2ms;
+          animation: scaleUp 0.3s linear 181/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(182) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 182/1.2ms;
+          animation: scaleUp 0.3s linear 182/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(183) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 183/1.2ms;
+          animation: scaleUp 0.3s linear 183/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(184) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 184/1.2ms;
+          animation: scaleUp 0.3s linear 184/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(185) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 185/1.2ms;
+          animation: scaleUp 0.3s linear 185/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(186) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 186/1.2ms;
+          animation: scaleUp 0.3s linear 186/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(187) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 187/1.2ms;
+          animation: scaleUp 0.3s linear 187/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(188) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 188/1.2ms;
+          animation: scaleUp 0.3s linear 188/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(189) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 189/1.2ms;
+          animation: scaleUp 0.3s linear 189/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(190) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 190/1.2ms;
+          animation: scaleUp 0.3s linear 190/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(191) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 191/1.2ms;
+          animation: scaleUp 0.3s linear 191/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(192) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 192/1.2ms;
+          animation: scaleUp 0.3s linear 192/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(193) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 193/1.2ms;
+          animation: scaleUp 0.3s linear 193/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(194) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 194/1.2ms;
+          animation: scaleUp 0.3s linear 194/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(195) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 195/1.2ms;
+          animation: scaleUp 0.3s linear 195/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(196) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 196/1.2ms;
+          animation: scaleUp 0.3s linear 196/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(197) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 197/1.2ms;
+          animation: scaleUp 0.3s linear 197/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(198) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 198/1.2ms;
+          animation: scaleUp 0.3s linear 198/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(199) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 199/1.2ms;
+          animation: scaleUp 0.3s linear 199/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:nth-child(200) {
+          -webkit-transition: -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease;
+          -webkit-animation: scaleUp 0.3s linear 200/1.2ms;
+          animation: scaleUp 0.3s linear 200/1.2ms; }
+        #let-me-take-a-selfie ul li.pop:hover {
+          -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          transform: scale(1.3);
+          z-index: 3; }
       #let-me-take-a-selfie ul li img {
         width: 100%;
         display: block; }
@@ -4479,6 +5551,7 @@ button.close {
   z-index: 1; }
   .cover-container .inner-cover {
     -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
     -webkit-animation: letMe 3s ease;
     animation: letMe 3s ease; }
@@ -4526,3 +5599,67 @@ button.close {
   100% {
     -webkit-transform: scale(0);
     transform: scale(0); } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+#ribbon-container {
+  overflow: hidden;
+  position: fixed;
+  height: 185.64356px;
+  width: 176.80339px;
+  bottom: 0;
+  right: 0;
+  z-index: 10; }
+
+#ribbon {
+  position: absolute;
+  background-color: #EE6D6A;
+  -webkit-box-shadow: #888, 0, 0, 1em;
+  box-shadow: #888, 0, 0, 1em;
+  width: 250px;
+  bottom: 3.5em;
+  left: -0.5em;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+#ribbon a {
+  border: 1px solid #d45f5d;
+  color: #FFF;
+  display: block;
+  font: bold 81.25% "Helvetiva Neue", Helvetica, Arial, sans-serif;
+  margin: 0.05em 0 0.075em 0;
+  padding: 0.5em 3.5em;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: #444, 0, 0, 0.5em; }

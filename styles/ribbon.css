@@ -1,0 +1,31 @@
+#ribbon-container {
+  overflow: hidden;
+  position: fixed;
+  height: 185.64356px;
+  width: 176.80339px;
+  bottom: 0;
+  right: 0;
+  z-index: 10; }
+
+#ribbon {
+  position: absolute;
+  background-color: #EE6D6A;
+  -webkit-box-shadow: #888, 0, 0, 1em;
+  box-shadow: #888, 0, 0, 1em;
+  width: 250px;
+  bottom: 3.5em;
+  left: -0.5em;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+#ribbon a {
+  border: 1px solid #d45f5d;
+  color: #FFF;
+  display: block;
+  font: bold 81.25% "Helvetiva Neue", Helvetica, Arial, sans-serif;
+  margin: 0.05em 0 0.075em 0;
+  padding: 0.5em 3.5em;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: #444, 0, 0, 0.5em; }
