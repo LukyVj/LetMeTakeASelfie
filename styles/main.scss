@@ -80,5 +80,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
         transform: scale(0)
     }
 }
+#twitter-widget-0,iframe{
+    display: inline !important; position: relative !important; top: 5px!important;
+}
 @import 'reset.scss';
 @import 'ribbon.scss';
